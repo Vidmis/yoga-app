@@ -15,14 +15,14 @@ const Wrapper = () => {
         <FontAwesomeIcon icon={faTag} className='mr-5' />
         <p>50% discount only valid for 00:15:49</p>
       </header>
-      <div className='flex flex-col justify-center items-center'>
-        <div className='w-full sm:shadow-lg sm:shadow-gray-500/10 border-b sm:border-none flex justify-center items-center py-4'>
-          <img src={logo} alt='logo' />
-        </div>
+      <div className='w-full sm:shadow-lg sm:shadow-gray-500/10 border-b sm:border-none flex justify-center items-center py-4'>
+        <img src={logo} alt='logo' />
+      </div>
+      <div className='flex flex-col justify-center items-center max-w-sm m-auto sm:max-w-full'>
         <p className='font-normal text-sm mt-10 self-start pl-5 sm:p-0 sm:self-center'>
           Over <span className='font-bold'>52 147</span> plans ordered.
         </p>
-        <h1 className='font-extrabold text-3xl lg:text-[40px] mt-8 mb-6 px-4'>
+        <h1 className='font-extrabold text-3xl lg:text-[40px] mt-8 mb-6 px-4 max-w-sm lg:max-w-none'>
           Get access to your yoga program now!
         </h1>
         <div className='grid grid-cols-2 lg:grid-cols-6 justify-items-center'>
