@@ -5,3 +5,7 @@
 ### To run project locally
 
 - Download project > npm install > npm run start
+
+### Run project server version
+
+- npm run build > serve -s build
