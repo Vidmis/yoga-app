@@ -6,6 +6,6 @@
 
 - Download project > npm install > npm run start
 
-### Run project server version
+### Run project server (build) version
 
 - npm run build > serve -s build
