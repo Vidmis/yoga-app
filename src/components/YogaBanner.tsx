@@ -1,6 +1,9 @@
+import React from "react";
 import banner from "../images/phones.png";
 
-const YogaBanner = () => {
+interface IYogaProps {}
+
+const YogaBanner: React.FC<IYogaProps> = () => {
   return (
     <div className='flex flex-col items-center text-center w-86 lg:mr-8 mb-10'>
       <h2 className='font-bold text-xl lg:text-2xl self-start mb-6'>

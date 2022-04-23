@@ -7,8 +7,11 @@ import ClientsCarousel from "./ClientsCarousel";
 import YogaBanner from "./YogaBanner";
 import PositiveYogaList from "./PositiveYogaList";
 import Questions from "./Questions";
+import React from "react";
 
-const Wrapper = () => {
+interface IWrapperProps {}
+
+const Wrapper: React.FC<IWrapperProps> = () => {
   return (
     <>
       <header className='bg-blue-300 text-white h-12 flex flex-row items-center justify-center '>
