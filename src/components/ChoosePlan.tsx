@@ -1,37 +1,16 @@
+import React, { useState } from "react";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+
+import { PLANS } from "constants/constants";
 import GetPlanButton from "./GetPlanButton";
 import spons from "../images/image48.png";
 import useWindowDimensions from "./hooks/useWindowDimensions";
 
-const plansData = [
-  {
-    name: "planSix",
-    period: 6,
-    price: 9.99,
-    discountPrice: 59.94,
-    oldPrice: 119.94,
-    saveAmount: 50,
-  },
-  {
-    name: "planThree",
-    period: 3,
-    price: 14.99,
-    discountPrice: 44.97,
-    oldPrice: 59.97,
-  },
-  {
-    name: "planOne",
-    period: 1,
-    price: 19.99,
-    discountPrice: null,
-    oldPrice: null,
-  },
-];
+interface IPlanProps {}
 
-const ChoosePlan = () => {
-  const [chkBox, setChkBox] = useState({ name: "planSix" });
+const ChoosePlan: React.FC<IPlanProps> = () => {
+  const [chkBox, setChkBox] = useState<{ name: string }>({ name: "planSix" });
   const { width } = useWindowDimensions();
 
   return (
@@ -41,7 +20,7 @@ const ChoosePlan = () => {
         <span className='text-orange-400'>7 days free trial</span>
       </h2>
       <ul className=' w-86 my-2'>
-        {plansData.map(
+        {PLANS.map(
           ({ name, period, price, discountPrice, oldPrice, saveAmount }) => {
             return (
               <li
