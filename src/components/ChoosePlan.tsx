@@ -6,6 +6,7 @@ import { PLANS } from "constants/constants";
 import GetPlanButton from "./GetPlanButton";
 import spons from "../images/image48.png";
 import useWindowDimensions from "./hooks/useWindowDimensions";
+import { PlanContainer } from "./styles/ChoosePlan.styled";
 
 interface IPlanProps {}
 
@@ -14,10 +15,10 @@ const ChoosePlan: React.FC<IPlanProps> = () => {
   const { width } = useWindowDimensions();
 
   return (
-    <div className=' w-86 flex flex-col items-center lg:mr-4 mb-8'>
-      <h2 className='font-bold text-xl lg:text-2xl w-80 self-start'>
-        Choose your plan and get{" "}
-        <span className='text-orange-400'>7 days free trial</span>
+    <PlanContainer>
+      <h2>
+        Choose your plan and get
+        <span> 7 days free trial</span>
       </h2>
       <ul className=' w-86 my-2'>
         {PLANS.map(
@@ -105,7 +106,7 @@ const ChoosePlan: React.FC<IPlanProps> = () => {
         </span>
       </p>
       <img src={spons} alt='sponsors' className='my-2' />
-    </div>
+    </PlanContainer>
   );
 };
 
