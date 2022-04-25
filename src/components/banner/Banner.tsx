@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../images/phones.png";
+import { phonesImg } from "images";
 
 export const Banner: React.FC = () => (
   <div className='flex flex-col items-center text-center w-86 lg:mr-8 mb-10'>
@@ -7,7 +7,7 @@ export const Banner: React.FC = () => (
       Start your yoga journey now!
     </h2>
     <img
-      src={banner}
+      src={phonesImg}
       alt='phones_image'
       className='bg-accent bg-no-repeat bg-center py-5 lg:py-0 lg:bg-none'
     />

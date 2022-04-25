@@ -4,19 +4,18 @@ import { Pagination } from "swiper";
 import "swiper/css/pagination";
 import "swiper/css";
 import { Button } from "components";
-import { CLIENTS } from "../../constants";
-import { useWindowDimensions } from "../hooks";
-import star from "../images/mdi_star.png";
+import { starImg } from "images";
+import { CLIENTS } from "consts";
+import { useWindowDimensions } from "components/hooks";
 
 export const Carousel: React.FC = () => {
   const { width } = useWindowDimensions();
-
   const ratingsArr: Array<JSX.Element[]> = [];
 
   const renderStars = (stars: number) => {
     const starsRated: JSX.Element[] = [];
     for (let i = 0; i < stars; i++) {
-      starsRated.push(<img src={star} alt='star' key={i} />);
+      starsRated.push(<img src={starImg} alt='star' key={i} />);
     }
     ratingsArr.push(starsRated);
   };

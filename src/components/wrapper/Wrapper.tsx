@@ -1,15 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTag } from "@fortawesome/free-solid-svg-icons";
-import {
-  ChoosePlan,
-  MyProgram,
-  ClientsCarousel,
-  YogaBanner,
-  PositiveYogaList,
-  Questions,
-} from "../../components";
-import logo from "../images/Logo.png";
+import { Banner, Carousel, List, Plan, Program, Questions } from "components";
+import { logoImg } from "images";
 
 export const Wrapper: React.FC = () => (
   <>
@@ -18,7 +11,7 @@ export const Wrapper: React.FC = () => (
       <p>50% discount only valid for 00:15:49</p>
     </header>
     <div className='w-full sm:shadow-lg sm:shadow-gray-500/10 border-b sm:border-none flex justify-center items-center py-4'>
-      <img src={logo} alt='logo' />
+      <img src={logoImg} alt='logo' />
     </div>
     <div className='flex flex-col justify-center items-center max-w-sm m-auto sm:max-w-full'>
       <p className='font-normal text-sm mt-10 self-start pl-5 sm:p-0 sm:self-center'>
@@ -29,15 +22,15 @@ export const Wrapper: React.FC = () => (
       </h1>
       <div className='grid grid-cols-2 lg:grid-cols-6 justify-items-center'>
         <div className='flex flex-col lg:flex-row col-start-1 col-span-2 lg:col-start-2 lg:col-span-4'>
-          <ChoosePlan />
-          <MyProgram />
+          <Plan />
+          <Program />
         </div>
         <div className='row-start-2 lg:col-start-2 col-span-4'>
-          <ClientsCarousel />
+          <Carousel />
         </div>
         <div className=' flex flex-col lg:flex-row row-start-3 col-start-1 col-span-2 lg:col-start-2 lg:col-span-4 mt-14'>
-          <YogaBanner />
-          <PositiveYogaList />
+          <Banner />
+          <List />
         </div>
         <div className='row-start-4 col-start-1 col-span-2 lg:col-start-2 lg:col-span-4 mb-14'>
           <Questions />
@@ -46,8 +39,8 @@ export const Wrapper: React.FC = () => (
           Start your yoga program today!
         </h1>
         <div className=' flex flex-col lg:flex-row row-start-6 col-start-1 col-span-2 lg:col-start-2 lg:col-span-4'>
-          <ChoosePlan />
-          <MyProgram />
+          <Plan />
+          <Program />
         </div>
       </div>
     </div>

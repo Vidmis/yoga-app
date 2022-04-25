@@ -1,7 +1,7 @@
 import React from "react";
-import { PROGRAM } from "constants/constants";
+import { PROGRAM } from "consts";
 
-export const MyProgram: React.FC = () => (
+export const Program: React.FC = () => (
   <div className='w-86 lg:ml-4 mb-8'>
     <h2 className='font-bold text-xl lg:text-2xl w-80 self-start mb-5 lg:mb-9'>
       What's in my program?

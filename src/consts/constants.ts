@@ -1,14 +1,16 @@
-import { client1, client2, client3 } from "images";
-
-import bookcheck from "../images/icons/bookcheck.png";
-import diet from "../images/icons/diet.png";
-import exercise from "../images/icons/exercise.png";
-import plan from "../images/icons/plan.png";
-import shoe from "../images/icons/shoe.png";
-import smartwatch from "../images/icons/smartwatch.png";
-import whistle from "../images/icons/whistle.png";
-import icon from "../images/checkImage.png";
-
+import {
+  bookcheckImg,
+  checkImg,
+  client1Img,
+  client2Img,
+  client3Img,
+  dietImg,
+  exerciseImg,
+  planImg,
+  shoeImg,
+  smartwatchImg,
+  whistleImg,
+} from "images";
 interface IPlans {
   name: string;
   period: number;
@@ -75,7 +77,7 @@ export const CLIENTS: IClients[] = [
     age: 28,
     city: "Delaware, NJ",
     rating: 3,
-    image: client1,
+    image: client1Img,
     text: "I have been using this program for 3 months now and It helped me to lose 16lbs, taught me how to breathe properly and now I look forward to my workout. Great challenges for different problem zones. Definitely recommend to anyone that wants to lose weight and feel better without long hour at the gym or exhausting workouts.",
   },
   {
@@ -83,7 +85,7 @@ export const CLIENTS: IClients[] = [
     age: 40,
     city: "Los Angeles",
     rating: 5,
-    image: client2,
+    image: client2Img,
     text: "I will be very straightforward - I hate sports and working out. Positive Yoga put my physical activity to the next level. I started to enjoy my morning yoga routines where I get my dose of cardio, resistance, and stretching in one place. I could barely hold a plank at the beginning. Now I’m doing various yoga poses that looked impossible at first. My body shape improved a lot and I am very motivated by both: results and the feeling of progress.",
   },
   {
@@ -91,7 +93,7 @@ export const CLIENTS: IClients[] = [
     age: 51,
     city: "San Francisco, CA",
     rating: 2,
-    image: client3,
+    image: client3Img,
     text: "I have many friends who practice yoga and I decided to try it myself. It is the best decision I have made in a long time. With Positive Yoga program I started to lose weight, which was demotivating me for a long time. Also, I’ve learned about yoga philosophy and poses that encourage me to practice mindfulness and pay attention to stress reduction. I am very proud of myself. Feeling better is my biggest motivation.",
   },
 ];
@@ -99,43 +101,43 @@ export const CLIENTS: IClients[] = [
 export const PROGRAM: IProgram[] = [
   {
     id: 1,
-    image: plan,
+    image: planImg,
     header: "A personalized yoga program",
     text: "Completely safe and focused on your key goals",
   },
   {
     id: 2,
-    image: exercise,
+    image: exerciseImg,
     header: "Easy & enjoyable yoga workouts for your level",
     text: "Program adjusts to your level and pace",
   },
   {
     id: 3,
-    image: shoe,
+    image: shoeImg,
     header: "No special preparation needed",
     text: "Perfect for begginners! Requires no special preparation or equipment",
   },
   {
     id: 4,
-    image: diet,
+    image: dietImg,
     header: "Daily motivation & accountability",
     text: "Track your progress, develop a healthy routine, reach goals faster",
   },
   {
     id: 5,
-    image: whistle,
+    image: whistleImg,
     header: "Browse from various yoga challenges",
     text: "30 d morning yoga, mindful yoga, back flexibility challenge, and more!",
   },
   {
     id: 6,
-    image: smartwatch,
+    image: smartwatchImg,
     header: "Easy access on any device",
     text: "Do your yoga anywhere across all types of devices",
   },
   {
     id: 7,
-    image: bookcheck,
+    image: bookcheckImg,
     header: "A complete guide to get started",
     text: "Best tips, guidelines, advice, and recommendations for successful practice",
   },
@@ -143,27 +145,27 @@ export const PROGRAM: IProgram[] = [
 
 export const BENEFITS: IBenefits[] = [
   {
-    image: icon,
+    image: checkImg,
     text: "Each program adapts to your age or fitness level",
   },
   {
-    image: icon,
+    image: checkImg,
     text: "Mindful way to exercise and get real results",
   },
   {
-    image: icon,
+    image: checkImg,
     text: "Effective and long-term lasting results",
   },
   {
-    image: icon,
+    image: checkImg,
     text: "Suited activities that benefit both the mind and body",
   },
   {
-    image: icon,
+    image: checkImg,
     text: "Low-intensity but highly-effective workouts",
   },
   {
-    image: icon,
+    image: checkImg,
     text: "Extra attention to muscle, joint and back health",
   },
 ];

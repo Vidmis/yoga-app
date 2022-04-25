@@ -1,9 +1,8 @@
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
-import { GetPlanButton } from "../button/Button";
-import React from "react";
-import { QUESTIONS } from "constants/constants";
+import { Button } from "components";
+import { QUESTIONS } from "consts";
 
 interface IQuestionListProps {
   question?: string;
@@ -42,6 +41,6 @@ export const Questions: React.FC = () => (
         <QuestionsList question={question} answer={answer} key={index} />
       ))}
     </ul>
-    <GetPlanButton>Get my plan</GetPlanButton>
+    <Button>Get my plan</Button>
   </div>
 );

@@ -1,7 +1,7 @@
 import React from "react";
-import { BENEFITS } from "constants/constants";
+import { BENEFITS } from "consts";
 
-export const PositiveYogaList: React.FC = () => (
+export const List: React.FC = () => (
   <div className='w-86 lg:ml-8 mb-10 mt-6 lg:mt-0'>
     <h2 className='font-bold text-xl lg:text-2xl self-start mb-8'>
       Is Positive Yoga right for me?

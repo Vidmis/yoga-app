@@ -7,7 +7,7 @@ module.exports = {
         204: "46rem",
       },
       backgroundImage: {
-        accent: "url('/src/images/accent.png')",
+        accent: "url('/src/images/misc/accent.png')",
       },
     },
   },

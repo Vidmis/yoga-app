@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { PLANS } from "constants/constants";
+import { PLANS } from "consts";
 import { Button } from "components";
-import spons from "../images/image48.png";
-import useWindowDimensions from "../hooks/useWindowDimensions";
+import { sponsorsImg } from "images";
+import { useWindowDimensions } from "components/hooks";
 
-export const ChoosePlan: React.FC = () => {
+export const Plan: React.FC = () => {
   const [chkBox, setChkBox] = useState<{ name: string }>({ name: "planSix" });
   const { width } = useWindowDimensions();
 
@@ -99,7 +99,7 @@ export const ChoosePlan: React.FC = () => {
           Privacy Policy
         </span>
       </p>
-      <img src={spons} alt='sponsors' className='my-2' />
+      <img src={sponsorsImg} alt='sponsors' className='my-2' />
     </div>
   );
 };
