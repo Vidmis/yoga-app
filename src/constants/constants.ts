@@ -1,6 +1,5 @@
-import client1 from "../images/clients/client1.png";
-import client2 from "../images/clients/client2.png";
-import client3 from "../images/clients/client3.png";
+import { client1, client2, client3 } from "images";
+
 import bookcheck from "../images/icons/bookcheck.png";
 import diet from "../images/icons/diet.png";
 import exercise from "../images/icons/exercise.png";

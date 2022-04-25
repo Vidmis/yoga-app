@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import GetPlanButton from "./GetPlanButton";
+import { GetPlanButton } from "../button/Button";
 import React from "react";
 import { QUESTIONS } from "constants/constants";
 
@@ -10,8 +10,6 @@ interface IQuestionListProps {
   answer?: string;
   key?: number;
 }
-
-interface IQuestionsProps {}
 
 const QuestionsList: React.FC<IQuestionListProps> = ({ question, answer }) => {
   const [open, setOpen] = useState<boolean>(false);
@@ -34,22 +32,16 @@ const QuestionsList: React.FC<IQuestionListProps> = ({ question, answer }) => {
   );
 };
 
-const Questions: React.FC<IQuestionsProps> = () => {
-  return (
-    <div className='flex flex-col items-center mt-14'>
-      <h2 className='font-bold text-xl lg:text-2xl self-start lg:self-center mb-4'>
-        Frequently Asked Questions
-      </h2>
-      <ul className='w-86 lg:w-204 mb-8'>
-        {QUESTIONS.map(({ question, answer }, index) => {
-          return (
-            <QuestionsList question={question} answer={answer} key={index} />
-          );
-        })}
-      </ul>
-      <GetPlanButton>Get my plan</GetPlanButton>
-    </div>
-  );
-};
-
-export default Questions;
+export const Questions: React.FC = () => (
+  <div className='flex flex-col items-center mt-14'>
+    <h2 className='font-bold text-xl lg:text-2xl self-start lg:self-center mb-4'>
+      Frequently Asked Questions
+    </h2>
+    <ul className='w-86 lg:w-204 mb-8'>
+      {QUESTIONS.map(({ question, answer }, index) => (
+        <QuestionsList question={question} answer={answer} key={index} />
+      ))}
+    </ul>
+    <GetPlanButton>Get my plan</GetPlanButton>
+  </div>
+);

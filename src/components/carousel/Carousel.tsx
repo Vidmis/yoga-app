@@ -3,14 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
 import "swiper/css";
-import { CLIENTS } from "constants/constants";
+import { Button } from "components";
+import { CLIENTS } from "../../constants";
+import { useWindowDimensions } from "../hooks";
 import star from "../images/mdi_star.png";
-import useWindowDimensions from "./hooks/useWindowDimensions";
-import GetPlanButton from "./GetPlanButton";
 
-interface IClientProps {}
-
-const ClientsCarousel: React.FC<IClientProps> = () => {
+export const Carousel: React.FC = () => {
   const { width } = useWindowDimensions();
 
   const ratingsArr: Array<JSX.Element[]> = [];
@@ -56,7 +54,7 @@ const ClientsCarousel: React.FC<IClientProps> = () => {
             );
           })}
         </Swiper>
-        <GetPlanButton>Get my plan</GetPlanButton>
+        <Button>Get my plan</Button>
       </div>
     );
   } else {
@@ -89,10 +87,8 @@ const ClientsCarousel: React.FC<IClientProps> = () => {
             );
           })}
         </ul>
-        <GetPlanButton>Get my plan</GetPlanButton>
+        <Button>Get my plan</Button>
       </div>
     );
   }
 };
-
-export default ClientsCarousel;

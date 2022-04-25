@@ -1,13 +1,10 @@
 import React from "react";
-import "./App.css";
-import Wrapper from "./components/Wrapper";
+import { Wrapper } from "components";
 
-function App() {
-  return (
-    <div className='App bg-white text-gray-900'>
-      <Wrapper />
-    </div>
-  );
-}
+const App: React.FC = () => (
+  <div className='App bg-white text-gray-900'>
+    <Wrapper />
+  </div>
+);
 
 export default App;
