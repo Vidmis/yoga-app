@@ -11,7 +11,7 @@ interface IQuestionListProps {
 }
 
 const QuestionsList: React.FC<IQuestionListProps> = ({ question, answer }) => {
-  const [open, setOpen] = useState<boolean>(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <li

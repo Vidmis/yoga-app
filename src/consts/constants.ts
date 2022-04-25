@@ -11,12 +11,13 @@ import {
   smartwatchImg,
   whistleImg,
 } from "images";
+
 interface IPlans {
   name: string;
   period: number;
   price: number;
-  discountPrice: number | undefined;
-  oldPrice: number | undefined;
+  discountPrice?: number;
+  oldPrice?: number;
   saveAmount?: number;
 }
 
@@ -34,6 +35,16 @@ interface IProgram {
   image: string;
   header: string;
   text: string;
+}
+
+interface IBenefits {
+  image: string;
+  text: string;
+}
+
+interface IQuestions {
+  question: string;
+  answer: string;
 }
 
 export const PLANS: IPlans[] = [
@@ -60,16 +71,6 @@ export const PLANS: IPlans[] = [
     oldPrice: undefined,
   },
 ];
-
-interface IBenefits {
-  image: string;
-  text: string;
-}
-
-interface IQuestions {
-  question: string;
-  answer: string;
-}
 
 export const CLIENTS: IClients[] = [
   {
