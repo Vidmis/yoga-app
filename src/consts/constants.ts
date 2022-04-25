@@ -90,7 +90,7 @@ export const CLIENTS: IClients[] = [
     text: "I will be very straightforward - I hate sports and working out. Positive Yoga put my physical activity to the next level. I started to enjoy my morning yoga routines where I get my dose of cardio, resistance, and stretching in one place. I could barely hold a plank at the beginning. Now I’m doing various yoga poses that looked impossible at first. My body shape improved a lot and I am very motivated by both: results and the feeling of progress.",
   },
   {
-    name: "Jesica",
+    name: "Jessica",
     age: 51,
     city: "San Francisco, CA",
     rating: 2,
@@ -116,7 +116,7 @@ export const PROGRAM: IProgram[] = [
     id: 3,
     image: shoeImg,
     header: "No special preparation needed",
-    text: "Perfect for begginners! Requires no special preparation or equipment",
+    text: "Perfect for beginners! Requires no special preparation or equipment",
   },
   {
     id: 4,
@@ -175,7 +175,7 @@ export const QUESTIONS: IQuestions[] = [
   {
     question: "What happens after I order?",
     answer:
-      "After you place your order, we get to work! Based on the questions you answered in the quiz, we’ll craft your personal plan to your level with recomendations on how to improve.",
+      "After you place your order, we get to work! Based on the questions you answered in the quiz, we’ll craft your personal plan to your level with recommendations on how to improve.",
   },
   {
     question: "Where I can access my plan?",
